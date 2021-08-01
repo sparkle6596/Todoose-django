@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%block body_block%}
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+<h1>Add todoo</h1>
+<form action="" method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="addtodoo">
+</form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+</div>
+{%endblock%}
